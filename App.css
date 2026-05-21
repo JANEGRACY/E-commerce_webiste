@@ -1,0 +1,152 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #ffd700;
+}
+
+/* Container */
+.container {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Footer */
+.footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.navbar {
+  background: #1e3c72;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.container {
+  padding: 40px;
+  min-height: 70vh;
+}
+
+.footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Product Cards */
+.product-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card button {
+  background: #1e3c72;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #16305c;
+}
+.nav-username {
+  color: #fff;
+  font-size: 16px;
+  
+  list-style: none;
+}
+
+.logout-nav-btn {
+  padding: 7px 18px;
+   background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-nav-btn:hover {
+  background: #c62828;
+}

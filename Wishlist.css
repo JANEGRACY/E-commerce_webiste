@@ -1,0 +1,160 @@
+.wishlist-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.wishlist-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a2e5a;
+  margin-bottom: 24px;
+}
+
+/* Empty State */
+.empty-wishlist {
+  text-align: center;
+  margin-top: 60px;
+  color: #888;
+  font-size: 18px;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 28px;
+  background: #1a2e5a;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.shop-now-btn:hover {
+  background: #243f7a;
+}
+
+/* Wishlist Grid */
+.wishlist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Each Card */
+.wishlist-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+
+.wishlist-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.wish-img-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+  flex-shrink: 0;
+}
+
+.wish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info */
+.wish-info {
+  flex: 1;
+}
+
+.wish-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a2e5a;
+  margin: 0 0 4px 0;
+}
+
+.wish-category {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 6px 0;
+}
+
+.wish-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* Action Buttons */
+.wish-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.move-cart-btn {
+  padding: 9px 18px;
+  background: #1a2e5a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.move-cart-btn:hover {
+  background: #243f7a;
+}
+
+.remove-wish-btn {
+  padding: 9px 18px;
+  background: white;
+  color: #e53935;
+  border: 2px solid #e53935;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.remove-wish-btn:hover {
+  background: #e53935;
+  color: white;
+}
+
+/* Toast */
+.wish-toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1a2e5a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
